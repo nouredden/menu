@@ -294,6 +294,23 @@ header * {
         align-items: center;
     }
 
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar img {
+        margin: auto;
+    }
+
+    #navbar ul {
+        margin: auto;
+    }
+
+    header .content h1 {
+        font-size: 32px;
+        color: white;
+    }
+
     /* Menu start */
     .menu-item {
         margin: 10px;
@@ -330,6 +347,19 @@ header * {
 
     header {
         width: auto;
+    }
+
+
+    #navbar ul li a {
+        padding: 5px 10px;
+    }
+
+    header .content h1 {
+        font-size: 28px;
+    }
+
+    #offers .offers-items img {
+        width: 160px;
     }
 
 
