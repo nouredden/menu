@@ -64,6 +64,8 @@ function setLanguage(lang) {
     document.getElementById('main_course').innerText = translations[lang].main_course;
     document.getElementById('salad').innerText = translations[lang].salad;
     document.getElementById('appetizers').innerText = translations[lang].appetizers;
+    document.getElementById('drinks').innerText = translations[lang].drinks;
+    document.getElementById('rice').innerText = translations[lang].rice;
     document.getElementById('language-select').value = lang;
     document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
 }
