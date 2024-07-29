@@ -23,17 +23,23 @@
         <div id="navbar">
             <img src="./img/logo.png" alt="east food Logo">
             <nav>
-                <ul>
-                    <li><a href="#home">Arabic</a></li>
+                <!-- <ul>
+                    <li><a href="#home">عربي</a></li>
                     <li><a href="#about">English</a></li>
-                    <li><a href="#menu">Malay</a></li>
-                    <li><a href="#gallery">Chinese</a></li>
-                </ul>
+                    <li><a href="#menu">Melayu</a></li>
+                    <li><a href="#gallery">中国人</a></li>
+                </ul> -->
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                    <option value="ms">Melayu</option>
+                    <option value="zh">中国人</option>
+                </select>
             </nav>
         </div>
         <div class="content">
-            <h1>Welcome To <span class="primary-text">east food</span> Restaurant</h1>
-            <p>Here you can find the Most deliscious food in the world</p>
+            <h1 id="Welcome">Welcome To <span class="primary-text">east food</span> Restaurant</h1>
+            <p id="description">Here you can find the Most deliscious food in the world</p>
         </div>
 
 
@@ -42,7 +48,7 @@
     <!-- Header End -->
 
     <div class="container">
-        <button class="accordion">Main Course</button>
+        <button id="main_course" class="accordion">Main Course</button>
         <div class="panel">
             <div class="menu-item">
                 <img src="./img/food10.jpeg" alt="Lasal Cheese">
@@ -92,7 +98,7 @@
                         quaerat.</p>
                 </div>
             </div>
-        </div> <button class="accordion">Salad</button>
+        </div> <button id="salad" class="accordion">Salad</button>
         <div class="panel">
             <div class="menu-item">
                 <img src="./img/food10.jpeg" alt="Lasal Cheese">
@@ -144,7 +150,7 @@
             </div>
         </div>
 
-        <button class="accordion">Appetizers</button>
+        <button id="appetizers" class="accordion">Appetizers</button>
 
         <div class="panel">
 
