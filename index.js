@@ -16,7 +16,7 @@ for (i = 0; i < acc.length; i++) {
 
 const translations = {
     en: {
-        Welcome: "Welcome To East Food Restaurant",
+        Welcome: "Welcome To East Food Restaurant 😊",
         description: "Here you can find the Most deliscious food in the world",
         main_course: "Main Course",
         salad: "Salad",
@@ -25,7 +25,7 @@ const translations = {
         rice: "Rice"
     },
     ar: {
-        Welcome: " أهلاً وسهلاً بكم في مطعم الأكل الشرقي",
+        Welcome: " أهلاً وسهلاً بكم في مطعم الأكل الشرقي 😊😊",
         description: "هنا تجدون أطيب وألذ المأكولات في العالم",
         main_course: "الطبق الرئيسي",
         salad: "السلطة",
