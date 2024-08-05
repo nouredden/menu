@@ -122,14 +122,29 @@ function changeLanguage() {
 }
 
 function setLanguage(lang) {
-    document.getElementById('Welcome').innerText = translations[lang].Welcome;
-    document.getElementById('description').innerText = translations[lang].description;
-    document.getElementById('main_course').innerText = translations[lang].main_course;
-    document.getElementById('salad').innerText = translations[lang].salad;
-    document.getElementById('appetizers').innerText = translations[lang].appetizers;
-    document.getElementById('drinks').innerText = translations[lang].drinks;
-    document.getElementById('rice').innerText = translations[lang].rice;
-    document.getElementById('language-select').value = lang;
+    // document.getElementById('Welcome').innerText = translations[lang].Welcome;
+    // document.getElementById('description').innerText = translations[lang].description;
+    // document.getElementById('main_course').innerText = translations[lang].main_course;
+    // document.getElementById('salad').innerText = translations[lang].salad;
+    // document.getElementById('appetizers').innerText = translations[lang].appetizers;
+    // document.getElementById('drinks').innerText = translations[lang].drinks;
+    // document.getElementById('rice').innerText = translations[lang].rice;
+    // document.getElementById('language-select').value = lang;
+    
+    const elementsToTranslate = Object.keys(translations[lang]);
+            elementsToTranslate.forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    if (element.tagName.toLowerCase() === 'h3') {
+                        const priceSpan = element.querySelector('.primary-text');
+                        const priceText = priceSpan ? priceSpan.outerHTML : '';
+                        element.innerHTML = `${translations[lang][key]} ${priceText}`;
+                    } else {
+                        element.innerText = translations[lang][key];
+                    }
+                }
+            });
+    
     document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
 }
 
