@@ -216,15 +216,26 @@ header * {
 } */
 .panel {
     display: flex;
-    width: auto;
+    width: 100%;
     align-items: flex-start;
-    gap: 28px;
+    gap: 8px;
+    overflow-y: scroll;
     overflow-x: scroll;
+    padding: 0 8px;
+    background-color: white;
+    max-height: 0;
+    /* overflow: hidden; */
+    transition: max-height 0.2s ease-out;
 }
+
+.panel::-webkit-scrollbar {
+    width: 0;
+}
+
 .menu-item {
-    margin: auto;
+    /* margin: auto;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 0.5vw;
     width: 220px;
     height: 340px;
@@ -294,13 +305,6 @@ position: relative;
     content: "\2212";
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
 
 /* Accordion End */
 
