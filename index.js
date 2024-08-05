@@ -146,7 +146,7 @@ function setLanguage(lang) {
             });
     
     document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
-}
+    }
 
 function detectLanguage() {
     const browserLang = navigator.language.slice(0, 2);
