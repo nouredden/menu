@@ -15,9 +15,8 @@ body {
     justify-content: center;
 }
 
-.container {
-    justify-content: center;
-    align-items: center;
+#items .container {
+    width: 100%;
 }
 
 ul {
@@ -209,22 +208,14 @@ header * {
 /* Offers End */
 /* Menu start */
 
-/* .scroll-container {
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%;
-} */
-.panel {
+#items .container .item-panels .panel{
     display: flex;
     width: 100%;
     align-items: flex-start;
-    gap: 8px;
-    overflow-y: scroll;
     overflow-x: scroll;
-    padding: 0 8px;
+    overflow-y: visible;
     background-color: white;
     max-height: 0;
-    /* overflow: hidden; */
     transition: max-height 0.2s ease-out;
 }
 
@@ -233,19 +224,20 @@ header * {
 }
 
 .menu-item {
-    /* margin: auto;
+    display: flex;
+    margin: 22px;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     padding: 0.5vw;
-    width: 220px;
-    height: 340px;
-        border-radius: 22px;
+    flex: 1 0 auto ; /* Allow items to grow and shrink */
+    height: 140px;
+    border-radius: 22px;
     border: dashed #1d1d1d 1px;
     vertical-align: middle;
 }
 
 .menu-item img {
-    width: 60%;
+    width: 10vw;
     border-radius: 20%;
     margin: 12px;
 position: relative;
@@ -256,7 +248,7 @@ position: relative;
     border-bottom: 1px dashed #c2bdbd;
     padding-bottom: 10px;
     position: relative;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .menu-item span {

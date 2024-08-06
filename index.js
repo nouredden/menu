@@ -35,9 +35,16 @@ const translations = {
         drinks_1d: "Refreshing lemonade made with fresh lemons and a hint of mint.",
         drinks_2: "Iced Tea",
         drinks_2d: "Chilled tea served with a slice of lemon.",
-        rice: "Rice",
-        rice_1: "Fried Rice",
-        rice_1d: "Rice stir-fried with vegetables and a choice of chicken or shrimp."
+        Rice:"Rice",
+        Rice_1: "Fried Rice",
+        Rice_1d: "Rice stir-fried with vegetables and a choice of chicken or shrimp.",
+      Grill:"Grill",
+        Grill_1: "Grilled Chicken",
+        Grill_1d: "Tender grilled chicken served with a side of vegetables and mashed potatoes.",
+      Soup:"Soup",
+        Soup_1: "Tomato Soup",
+        Soup_1d: "Rich and creamy tomato soup garnished with fresh basil."
+      
     },
     ar: {
         Welcome: "أهلاً وسهلاً بكم في مطعم الأكل الشرقي 😊",
@@ -60,9 +67,16 @@ const translations = {
         drinks_1d: "ليموناضة منعشة مصنوعة من الليمون الطازج وقليل من النعناع.",
         drinks_2: "شاي مثلج",
         drinks_2d: "شاي بارد يقدم مع شريحة ليمون.",
-        rice: "الرز",
-        rice_1: "أرز مقلي",
-        rice_1d: "أرز مقلي مع الخضروات واختيارك من الدجاج أو الروبيان."
+        Rice: "أرز",
+Rice_1: "أرز مقلي",
+Rice_1d: "أرز مقلي مع الخضروات وخيار من الدجاج أو الروبيان.",
+Grill: "شواء",
+Grill_1: "دجاج مشوي",
+Grill_1d: "دجاج مشوي طري يقدم مع جانب من الخضار والبطاطس المهروسة.",
+Soup: "حساء",
+Soup_1: "حساء الطماطم",
+Soup_1d: "حساء الطماطم الغني والكريمي مزين بالريحان الطازج."
+
     },
     ms: {
         Welcome: "Selamat Datang Ke Restoran East Food 😊",
@@ -85,9 +99,16 @@ const translations = {
         drinks_1d: "Lemonade yang menyegarkan dibuat daripada lemon segar dengan sedikit pudina.",
         drinks_2: "Teh Ais",
         drinks_2d: "Teh sejuk dihidangkan dengan hirisan lemon.",
-        rice: "Nasi",
-        rice_1: "Nasi Goreng",
-        rice_1d: "Nasi yang digoreng dengan sayur-sayuran dan pilihan ayam atau udang."
+        Rice: "Nasi",
+Rice_1: "Nasi Goreng",
+Rice_1d: "Nasi yang digoreng dengan sayur-sayuran dan pilihan ayam atau udang.",
+Grill: "Panggang",
+Grill_1: "Ayam Panggang",
+Grill_1d: "Ayam panggang lembut yang dihidangkan dengan sayur-sayuran dan kentang lenyek.",
+Soup: "Sup",
+Soup_1: "Sup Tomato",
+Soup_1d: "Sup tomato yang kaya dan berkrim dihias dengan daun selasih segar."
+
     },
     zh: {
         Welcome: "欢迎光临东方美食餐厅 😊",
@@ -110,9 +131,16 @@ const translations = {
         drinks_1d: "用新鲜柠檬和薄荷制成的清爽柠檬水。",
         drinks_2: "冰茶",
         drinks_2d: "冰镇茶，配一片柠檬。",
-        rice: "米饭",
-        rice_1: "炒饭",
-        rice_1d: "炒饭配以蔬菜，可以选择鸡肉或虾仁。"
+        Rice: "米饭",
+Rice_1: "炒饭",
+Rice_1d: "用蔬菜和鸡肉或虾炒制的米饭。",
+Grill: "烧烤",
+Grill_1: "烤鸡",
+Grill_1d: "嫩烤鸡，配以蔬菜和土豆泥。",
+Soup: "汤",
+Soup_1: "番茄汤",
+Soup_1d: "浓郁奶油番茄汤，点缀新鲜罗勒。"
+
     }
 };
 
@@ -122,15 +150,6 @@ function changeLanguage() {
 }
 
 function setLanguage(lang) {
-    // document.getElementById('Welcome').innerText = translations[lang].Welcome;
-    // document.getElementById('description').innerText = translations[lang].description;
-    // document.getElementById('main_course').innerText = translations[lang].main_course;
-    // document.getElementById('salad').innerText = translations[lang].salad;
-    // document.getElementById('appetizers').innerText = translations[lang].appetizers;
-    // document.getElementById('drinks').innerText = translations[lang].drinks;
-    // document.getElementById('rice').innerText = translations[lang].rice;
-    // document.getElementById('language-select').value = lang;
-    
     const elementsToTranslate = Object.keys(translations[lang]);
             elementsToTranslate.forEach(key => {
                 const element = document.getElementById(key);
