@@ -254,11 +254,24 @@ position: relative;
 .menu-item span {
     position: relative;
 }
-/* .menu-item span {
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
+/* Footer Start */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer End */
 
 /* Menu end */
 /* Accordion Start */
