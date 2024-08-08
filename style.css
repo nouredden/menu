@@ -185,8 +185,8 @@ header * {
 }
 
 .menu-item img {
-    width: 10vw;
-    height: 10vw;
+    width: 120px;
+    height: 120px;
     border-radius: 20%;
     margin: 12px;
 position: relative;
@@ -347,8 +347,6 @@ footer {
 
     .menu-item span {
         position: relative;
-        top: 0;
-        right: 10px;
     }
 
     .menu-item img {
