@@ -371,6 +371,7 @@ footer {
 
     .menu-item span {
         position: relative;
+        margin: 20px;
     }
 
     .menu-item img {
